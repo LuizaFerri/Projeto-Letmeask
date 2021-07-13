@@ -1,0 +1,77 @@
+.question {
+    background: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 24px;
+    width:40vw;
+}
+
+.question +.question {
+    margin-top: 8px;
+}
+
+
+.question.highlighted {
+    background: #f4f0ff;
+    border:1px solid #835afd
+}
+.question.answered {
+   background: #dbdcdd;
+}
+
+p#p-question{
+    color:#29292e;
+}
+
+footer#footer-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    gap: 16px;
+
+}
+
+.user-info2 {
+    display: flex;
+    align-items: center;
+    flex:1
+}
+
+span#span4{
+    margin-left: 8px;
+    color:#737380;
+    font-size: 14px;
+}
+
+img#img-question{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.like-button{
+  display: flex;
+  align-items: flex-end;
+  color:#737380;
+  gap: 8px;
+}
+
+.like-button:hover{
+    filter: brightness(0.8);
+}
+
+button {
+      border:0;
+      background: transparent;
+      cursor: pointer;
+}
+
+.like-button .liked{
+    color:#835afd
+}
+
+svg .path{
+    stroke: #835afd;
+}
+
