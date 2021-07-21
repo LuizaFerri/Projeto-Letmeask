@@ -36,7 +36,7 @@ type QuestionType = {
       const roomRef = database.ref(`rooms/${roomId}`);
   
       roomRef.on('value', room => {
-        const databaseRoom = room.val();
+        const databaseRoom = room.val() ? room.val() : {questions: null};
         const firebaseQuestions: FirebaseQuestions = databaseRoom.questions ?? {};
   
         const parsedQuestions = Object.entries(firebaseQuestions).map(([key, value]) => {
